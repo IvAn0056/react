@@ -1,0 +1,83 @@
+@import 'vars';
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid var(--textInputField);
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.menu{
+    display: none;
+}
+.navbar-left{
+    display: flex;
+    padding-left: 26px;
+    align-items: center;
+}
+.navLogo{
+    width: 130px;
+    cursor: pointer;
+}
+.navbar-left ul{
+    display: flex;
+    list-style: none;
+}
+.navbar-left ul li a{
+    text-decoration: none;
+    font-size: var(--md);
+    color: var(--veryLightPink);
+    padding: 4px 12px;
+}
+.navbar-left ul li .all{
+    color: var(--hospitalGreen);
+    border: 1px solid var(--hospitalGreen);
+    border-radius: 10px;
+}
+.navbar-right{
+    padding-right: 6px;
+}
+.navbar-right ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.navbar-right ul li {
+    font-size: var(--md);
+    font-weight: 300;
+    padding: 12px;
+    cursor: pointer;
+}
+.navbar-right ul div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    right: 23px;
+    bottom: 11px;
+    font-size: 9px;
+    font-weight: bold;
+    color: black;
+}
+@media (max-width:950px){
+    .menu{
+        display: flex;
+        padding-left: 16px;
+
+    }
+    .navbar-left ul{
+        display: none;
+    }
+    .navbar-right ul .email{
+        display: none;
+    }
+    .navbar-right ul{
+        margin: 0;
+        padding: 0;
+    }
+}

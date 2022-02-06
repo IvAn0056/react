@@ -1,0 +1,89 @@
+@import 'vars';
+
+.product-detail{
+    width: 360px;
+    padding-bottom: 24px;
+    position:absolute;
+    right: 0;
+}
+.back-image{
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    background-color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    padding: 4px;
+}
+.back-image img{
+    width: 12px;
+}
+.points{
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.points div{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--veryLightPink);
+    margin-left: 4px;
+}
+.points div:nth-child(1){
+    background-color: var(--hospitalGreen);
+}
+.product-detail > img:nth-child(2){
+    width: 100%;
+    border-radius: 0  0 20px 20px;
+    
+}
+.product-infoPD{
+    margin: 0 24px;
+}
+.product-infoPD p:nth-child(1){
+   font-weight: bold;
+   font-size: var(--md);
+   margin-bottom: 4px;
+}
+.product-infoPD p:nth-child(2){
+   font-size: var(--md);
+   color: var(--veryLightPink);
+   margin-bottom: 4px;
+   margin-top: 0;
+}
+.product-infoPD p:nth-child(3){
+   font-size: var(--md);
+   font-weight: 300;
+   color: var(--veryLightPink);
+   margin-bottom: 4px;
+}
+.primary-buttonPD{
+    background-color: var(--hospitalGreen);
+    border: none;
+    border-radius: 4px;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--white);
+    font-weight: 700;
+    font-size: var(--md);
+    height: 50px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 28px;
+}
+.add-to-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 640px) {
+    .product-detail{
+        width: 100%;
+    }
+}

@@ -1,0 +1,61 @@
+@import 'vars';
+
+.principal-containerEA{
+    width: 100%;
+    height: 85vh;
+    display: grid;
+    place-content: center;
+}
+.secundary-containerEA{
+    width: 300px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.titleEA{
+    font-size: var(--lg);
+    font-weight: 700;
+    margin-bottom: 44px;
+    text-align: left;
+}
+.formEA{
+    display: flex;
+    flex-direction: column;
+}
+.labelEA{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.textEA{
+    font-size: var(--md);
+    color: var(--veryLightPink);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.text-pwdEA{
+    margin-bottom: 44px;
+}
+.secundary-buttonEA{
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--white);
+    color: var(--hospitalGreen);
+    border-radius: 4px;
+    border: solid 1px var(--hospitalGreen);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: 700;
+    height: 50px;
+}
+@media (max-width: 640px) {
+    .principal-containerEA{
+        height: 100%;
+        margin-top: 25px;
+    }
+    .secundary-buttonEA{
+        width: 300px;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 24px;
+    }
+}
