@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "react e-shop",
   "main": "src/index.js",
+  "homepage": "https://ivan0056.github.io/react/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
